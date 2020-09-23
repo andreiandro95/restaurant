@@ -1,0 +1,49 @@
+.header{
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(0,0,0);
+    opacity: .7;
+    position: fixed;
+    .nav{
+        @include flex(space-between, center);
+        height: 10vh;
+        .logo{
+            font-size: 2rem;
+            color: $principalColor;
+            font-weight: 600;
+        }
+        .navigation-links{
+            ul{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                list-style-type: none; 
+                margin-right: 1rem;
+            }
+            li{
+                margin-left: 1.3rem;
+            }
+            a{
+                color: white;
+                font-size: 1.5rem;
+                text-decoration: none;
+                &:hover{
+                    color: $principalColor;
+                }
+            }
+            .active{
+                color: $principalColor;
+            }
+            .reservation-menu{
+                background-color: $principalColor;
+                color: white;
+                padding: .5rem 1rem;
+                &:hover{
+                    background-color: white;
+                    color: $principalColor;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+$principalColor: rgb(211, 171, 85);
+@mixin flex($align-horiz, $align-vert) {
+    display: flex;
+    justify-content: $align-horiz;
+    align-items: $align-vert;
+}
+@import "header";
+@import "main";
+@import "footer";
